@@ -3,11 +3,12 @@ import Image from "next/image";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
+import React from "react";
 
 const name = "Lain";
 export const siteTitle = "Lain's Next.js tutorial";
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home }: {children: React.ReactNode; home?:boolean}) {
   return (
     <div className={styles.container}>
       <Head>
